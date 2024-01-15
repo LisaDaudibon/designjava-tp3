@@ -6,16 +6,13 @@ public class Bulbasaur extends Pokemon {
         this(1);
     }
     public Bulbasaur (int level) {
-        this.level = level;
-        this.pv = level * 5;
+        super(level);
     }
-//    @Override
-//    public String toString() {
-//        return String.format("N°%s", POKEDEX_INDEX);
-//        super.toString();
-//    }
+
     @Override
     public String toString() {
-        return String.format("Pokemon N°%s %s de niveau %s et avec %s PV .", POKEDEX_INDEX, this.getClass().getName(), level, pv);
+        String conclusion = String.format("Pokemon N°%s ", POKEDEX_INDEX);
+        String motherString = super.toString();
+        return conclusion + motherString;
     }
 }
