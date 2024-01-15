@@ -2,15 +2,17 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Charmender flamèche = new Charmender();
-        Squirtle max = new Squirtle(6);
-        Bulbasaur violette = new Bulbasaur(10);
+        Pokemon flameche = new Charmander();
+        Pokemon max = new Squirtle(6);
+        Pokemon violette = new Bulbasaur(10);
 
-        flamèche.attack();
+        flameche.attack();
         max.attack();
         violette.attack();
 
+        System.out.println(flameche);
+        System.out.println(max);
+        System.out.println(violette);
 
-        }
     }
 }

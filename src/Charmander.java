@@ -1,12 +1,10 @@
-import java.util.Random;
+public class Charmander extends Pokemon {
+    public static final int POKEDEX_INDEX = 4;
 
-public class Squirtle extends Pokemon{
-    public static final int POKEDEX_INDEX = 7;
-
-    public Squirtle () {
+    public Charmander() {
         this(1);
     }
-    public Squirtle (int level) {
+    public Charmander(int level) {
         this.level = level;
         this.pv = level * 5 ;
     }

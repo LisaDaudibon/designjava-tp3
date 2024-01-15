@@ -1,16 +1,13 @@
 import java.util.Random;
 
-public class Charmender {
-    public static final int POKEDEX_INDEX = 4;
+public class Pokemon {
     public int level;
     public int pv;
 
-    static int MAX_ATTACK = 10;
-
-    public Charmender () {
+    public Pokemon () {
         this(1);
     }
-    public Charmender (int level) {
+    public Pokemon (int level) {
         this.level = level;
         this.pv = level * 5 ;
     }
@@ -25,8 +22,8 @@ public class Charmender {
         return attackPower;
     }
 
-    @Override
-    public String toString() {
-        return String.format("Pokemon N°%s %s de niveau %s et avec %s PV .", POKEDEX_INDEX, this.getClass().getName(), level, pv);
-    }
+//    @Override
+//    public String toString() {
+//        return String.format("Pokemon %s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
+//    }
 }
