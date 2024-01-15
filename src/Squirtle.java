@@ -12,8 +12,6 @@ public class Squirtle extends Pokemon{
 
     @Override
     public String toString() {
-        String conclusion = String.format("Pokemon N°%s ", POKEDEX_INDEX);
-        String motherString = super.toString();
-        return conclusion + motherString;
+        return String.format("Pokemon N°%s %s de niveau %s et avec %s PV .", POKEDEX_INDEX, this.getClass().getName(), this.getLevel(), this.getPv());
     }
 }

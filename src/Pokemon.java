@@ -38,8 +38,8 @@ public class Pokemon {
         return attackPower;
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
-    }
+//    @Override
+//    public String toString() {
+//        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
+//    }
 }
