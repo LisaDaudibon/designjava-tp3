@@ -1,16 +1,16 @@
 import java.util.Random;
 
-public class Squirtle {
-    public static final int POKEDEX_INDEX = 7;
+public class Bulbasaur {
+    public static final int POKEDEX_INDEX = 4;
     public int level;
     public int pv;
 
     static int MAX_ATTACK = 10;
 
-    public Squirtle () {
+    public Bulbasaur () {
         this(1);
     }
-    public Squirtle (int level) {
+    public Bulbasaur (int level) {
         this.level = level;
         this.pv = level * 5 ;
     }
