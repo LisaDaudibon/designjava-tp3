@@ -10,12 +10,15 @@ public class Main {
         max.attack();
         violette.attack();
 
-        if (max instanceof Squirtle) {
-            ((Squirtle) max).surf();
-        }
-        if (flameche instanceof Squirtle) {
-            ((Squirtle) flameche).surf();
-        }
+//        if (max instanceof Squirtle) {
+//            ((Squirtle) max).surf();
+//        }
+//        if (flameche instanceof Squirtle) {
+//            ((Squirtle) flameche).surf();
+//        }
+
+        ((Charmander) flameche).specialAttack();
+        ((Bulbasaur) violette).leafBlade();
 
         System.out.println(flameche);
         System.out.println(max);

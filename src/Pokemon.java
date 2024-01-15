@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class Pokemon {
+public abstract class Pokemon implements ElementType {
 
     private int level;
     private int pv;
@@ -11,6 +11,11 @@ public abstract class Pokemon {
     public Pokemon (int level) {
         this.level = level;
         this.pv = level * 5 ;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
     }
 
     public int attack () {
@@ -25,8 +30,5 @@ public abstract class Pokemon {
 
     public abstract void shout();
 
-    @Override
-    public String toString() {
-        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
-    }
+
 }

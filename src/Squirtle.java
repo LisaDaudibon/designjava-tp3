@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Squirtle extends Pokemon{
+public class Squirtle extends Pokemon implements Water {
     public static final int POKEDEX_INDEX = 7;
     public Squirtle () {
         super();
@@ -11,19 +11,44 @@ public class Squirtle extends Pokemon{
     }
 
     @Override
-    public void shout() {
-        System.out.println("Squirtle");
-    }
-
-    public class void surf() {
-        System.out.println("Squirtle se met à nager.");
-    }
-
-    @Override
     public String toString() {
         String conclusion = String.format("Pokemon N°%s ", POKEDEX_INDEX);
         String motherString = super.toString();
         return conclusion + motherString;
     }
 
+    @Override
+    public void shout() {
+        System.out.println("Squirtle");
+    }
+
+    public void surf() {
+        System.out.println("Squirtle se met à nager.");
+    }
+
+    @Override
+    public ElementTypes getType() {
+        return ElementTypes.WATER;
+    }
+
+    @Override
+    public int specialAttack() {
+       return waterGun();
+    }
+
+    @Override
+    public int waterGun() {
+        Random random = new Random();
+        int specialAttackPower = random.nextInt(10,20);
+        return specialAttackPower;
+    }
+
+    @Override
+    public boolean isStrongerAgainstType(ElementTypes type) {
+        if (type == ElementTypes.FIRE) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
