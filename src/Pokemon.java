@@ -1,24 +1,9 @@
 import java.util.Random;
 
-public class Pokemon {
+public abstract class Pokemon {
+
     private int level;
     private int pv;
-
-    public int getLevel () {
-        return this.level;
-    }
-
-    protected int setLevel () {
-        this.level = level;
-    }
-
-    public int getPv () {
-        return this.pv;
-    }
-
-    protected int setPv () {
-        this.pv = pv ;
-    }
 
     public Pokemon () {
         this(1);
@@ -38,8 +23,10 @@ public class Pokemon {
         return attackPower;
     }
 
-//    @Override
-//    public String toString() {
-//        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
-//    }
+    public abstract void shout();
+
+    @Override
+    public String toString() {
+        return String.format("%s de niveau %s et avec %s PV .", this.getClass().getName(), level, pv);
+    }
 }

@@ -2,16 +2,28 @@ import java.util.Random;
 
 public class Squirtle extends Pokemon{
     public static final int POKEDEX_INDEX = 7;
-
     public Squirtle () {
-        this(1);
+        super();
     }
+
     public Squirtle (int level) {
         super(level);
     }
 
     @Override
-    public String toString() {
-        return String.format("Pokemon N°%s %s de niveau %s et avec %s PV .", POKEDEX_INDEX, this.getClass().getName(), this.getLevel(), this.getPv());
+    public void shout() {
+        System.out.println("Squirtle");
     }
+
+    public class void surf() {
+        System.out.println("Squirtle se met à nager.");
+    }
+
+    @Override
+    public String toString() {
+        String conclusion = String.format("Pokemon N°%s ", POKEDEX_INDEX);
+        String motherString = super.toString();
+        return conclusion + motherString;
+    }
+
 }

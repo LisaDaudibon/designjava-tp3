@@ -10,6 +10,8 @@ public class Main {
         max.attack();
         violette.attack();
 
+        max.surf();
+
         System.out.println(flameche);
         System.out.println(max);
         System.out.println(violette);
