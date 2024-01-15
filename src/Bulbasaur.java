@@ -11,7 +11,6 @@ public class Bulbasaur extends Pokemon {
         super(level);
     }
 
-
     @Override
     public void shout() {
         System.out.println("Bulbasaur");

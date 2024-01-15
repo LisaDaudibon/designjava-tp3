@@ -10,7 +10,12 @@ public class Main {
         max.attack();
         violette.attack();
 
-        max.surf();
+        if (max instanceof Squirtle) {
+            ((Squirtle) max).surf();
+        }
+        if (flameche instanceof Squirtle) {
+            ((Squirtle) flameche).surf();
+        }
 
         System.out.println(flameche);
         System.out.println(max);
